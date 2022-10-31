@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <link rel="stylesheet" type="text/css" href="desktop.css" media="screen and (min-width:650px)"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive comments section</title>
+</head>
+<body>
+
+  <main>
+    <section class="commentContainer">
+      <div class="commentBlock1">
+        <img alt="userPicture" class="userPicture" src="./images/avatars/image-amyrobson.png">
+        <h3 class="userName">amyrobson</h3>
+        <p class="commentDate">1 month ago</p>
+      </div>
+      <div class="commentBlock2">
+        <p class="commentText">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+      </div>
+      <div class="commentBlock3">
+        <div class="scoreContainer">
+          <span class="plusScore"></span>
+          <div class="score">12</div>
+          <span class="minusScore"></span>
+        </div>
+
+        <div class="replayContainer">
+          <span class="replayIcon"></span>
+          <div class="replay">Replay</div>
+        </div>        
+      </div>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/SFCC5555">Mr.Ackerman Ver 1.0</a>.
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>

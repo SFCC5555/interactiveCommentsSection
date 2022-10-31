@@ -23,30 +23,47 @@ html {
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     font-family: var(--fontOne);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 15px;
-    background-color: var(--lightGray);
+    background-color: var(--veryLightGray);
 }
 
 main {
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .commentContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--white);
     padding: 15px;
     border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.replieBox {
+    border-left: 2px solid var(--lightGray);
+}
+
+.replieContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+
 }
 
 
@@ -68,15 +85,37 @@ main {
     margin-right: 15px;
 }
 
+.you {
+    color: var(--white);
+    background-color: var(--moderateBlue);
+    font-size: 1.3rem;
+    padding: 2px 6px;
+    border-radius: 2.5px;
+    margin-right: 10px;
+    translate: -5px;
+    
+}
+
 .commentDate {
     color: var(--grayishBlue);
     font-size: 1.6rem;
+    order:1;
 }
 
 .commentText {
     color: var(--grayishBlue);
     font-size: 1.6rem;
     margin-bottom: 15px;
+}
+
+.commentBlock2 {
+    display: flex;
+}
+
+.replyTo {
+    color: var(--moderateBlue);
+    font-size: 1.6rem;
+    font-weight: bold;
 }
 
 .commentBlock3 {
@@ -99,6 +138,12 @@ main {
 .score, .replay {
     font-size: 1.6rem;
     color: var(--moderateBlue);
+    font-weight: bold;
+}
+
+.deleteText {
+    font-size: 1.6rem;
+    color: var(--softRed);
     font-weight: bold;
 }
 
@@ -129,6 +174,23 @@ main {
 
 }
 
+.editContainer {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+
+.deleteContainer {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
 .replayIcon {
     display: inline-block;
     width: 14px;
@@ -136,6 +198,59 @@ main {
     background-image: url(./images/icon-reply.svg);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.editIcon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(./images/icon-edit.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.deleteIcon {
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background-image: url(./images/icon-delete.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.commentBlock4 {
+    display: flex;
+}
+
+.newBlock1 {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid var(--lightGray);
+    color: var(--grayishBlue);
+    font-size: 1.6rem;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.newBlock2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sendButton {
+    width: 115px;
+    height: 50px;
+    background-color: var(--moderateBlue);
+    color: var(--white);
+    border:none;
+    font-family: var(--fontOne);
+    font-size: bold;
+    font-size: 1.6rem;
+    border-radius: 10px;
+
 }
 
 .attribution { 

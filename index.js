@@ -75,9 +75,33 @@ fetch("./data.json")
       replay.innerText="Replay";
       replayContainer.appendChild(replay);
 
+      replayContainerD=document.createElement("div");
+      replayContainerD.setAttribute("class","replayContainerD");
+      commentBlock1.appendChild(replayContainerD);
+
+      replayIconD=document.createElement("span");
+      replayIconD.setAttribute("class","replayIcon");
+      replayContainerD.appendChild(replayIconD);
+
+      replayD=document.createElement("div");
+      replayD.setAttribute("class","replay");
+      replayD.innerText="Replay";
+      replayContainerD.appendChild(replayD);
+
       replieBox=document.createElement("section");
       replieBox.setAttribute("class","replieBox");
       main.appendChild(replieBox);
+
+      commentBlock5=document.createElement("div");
+      commentBlock5.setAttribute("class","commentBlock5");
+      commentContainer.appendChild(commentBlock5);
+      commentContainer.appendChild(commentBlock3);
+
+      commentBlock5.appendChild(commentBlock1);
+      commentBlock5.appendChild(commentBlock2);
+
+      
+      newComment(main,"newCommentContainer");
 
       for (replie of comment.replies) {
 
@@ -148,31 +172,81 @@ fetch("./data.json")
         replay.setAttribute("class","replay");
         replay.innerText="Replay";
         replayContainer.appendChild(replay);
+        
+
+        /*Desktop Modifications*/
+
+        replayContainerD=document.createElement("div");
+        replayContainerD.setAttribute("class","replayContainerD");
+        commentBlock1.appendChild(replayContainerD);
+
+        replayIconD=document.createElement("span");
+        replayIconD.setAttribute("class","replayIcon");
+        replayContainerD.appendChild(replayIconD);
+  
+        replayD=document.createElement("div");
+        replayD.setAttribute("class","replay");
+        replayD.innerText="Replay";
+        replayContainerD.appendChild(replayD);
+
+        commentBlock5=document.createElement("div");
+        commentBlock5.setAttribute("class","commentBlock5");
+        commentContainer.appendChild(commentBlock5);
+        commentContainer.appendChild(commentBlock3);
+  
+        commentBlock5.appendChild(commentBlock1);
+        commentBlock5.appendChild(commentBlock2);        
+        
+        replayContainerD.addEventListener("click",renderNewComment);
+        replayContainer.addEventListener("click",renderNewComment);
+        
 
         if (replie.user.username==data.currentUser.username) {
           
           commentBlock4=document.createElement("div");
           commentBlock4.setAttribute("class","commentBlock4")
           commentBlock3.appendChild(commentBlock4);
-               
+
+          commentBlock4D=document.createElement("div");
+          commentBlock4D.setAttribute("class","commentBlock4D")
+          commentBlock1.appendChild(commentBlock4D);
+                
           replay.innerText="Edit";
           replayIcon.setAttribute("class","editIcon");
           replayContainer.setAttribute("class","editContainer");
+          
+          replayD.innerText="Edit";
+          replayIconD.setAttribute("class","editIcon");
+          replayContainerD.setAttribute("class","editContainer");
 
           deleteContainer=document.createElement("div");
           deleteContainer.setAttribute("class","deleteContainer");
           commentBlock4.appendChild(deleteContainer);
 
+          deleteContainerD=document.createElement("div");
+          deleteContainerD.setAttribute("class","deleteContainer");
+          commentBlock4D.appendChild(deleteContainerD);
+
           deleteIcon=document.createElement("span");
           deleteIcon.setAttribute("class","deleteIcon");
           deleteContainer.appendChild(deleteIcon);
+
+          deleteIconD=document.createElement("span");
+          deleteIconD.setAttribute("class","deleteIcon");
+          deleteContainerD.appendChild(deleteIconD);
     
           deleteText=document.createElement("div");
           deleteText.setAttribute("class","deleteText");
           deleteText.innerText="Delete";
           deleteContainer.appendChild(deleteText);
 
+          deleteTextD=document.createElement("div");
+          deleteTextD.setAttribute("class","deleteText");
+          deleteTextD.innerText="Delete";
+          deleteContainerD.appendChild(deleteTextD);
+
           commentBlock4.appendChild(replayContainer);
+          commentBlock4D.appendChild(replayContainerD);
 
           you=document.createElement("div");
           you.setAttribute("class","you");
@@ -180,33 +254,46 @@ fetch("./data.json")
           commentBlock1.appendChild(you)
 
         }
+
+        else {
+          newComment(replieBox,"newReplieContainer")
+        }
       }
     }
 
-    newCommentContainer=document.createElement("section");
-    newCommentContainer.setAttribute("class","commentContainer");
-    main.appendChild(newCommentContainer);
+    function newComment(contenedor,clase) {
+      
+      newCommentContainer=document.createElement("section");
+      newCommentContainer.setAttribute("class",clase);
+      contenedor.appendChild(newCommentContainer);
+  
+      newBlock1=document.createElement("input");
+      newBlock1.setAttribute("class","newBlock1");
+      newBlock1.setAttribute("type","text");
+      newBlock1.setAttribute("placeholder","Add a comment...")
+      newCommentContainer.appendChild(newBlock1);
+  
+      newBlock2=document.createElement("div");
+      newBlock2.setAttribute("class","newBlock2");
+      newCommentContainer.appendChild(newBlock2);
+  
+      currentUserPicture=document.createElement("img");
+      currentUserPicture.setAttribute("class","userPicture");
+      currentUserPicture.setAttribute("alt","userPicture");
+      currentUserPicture.setAttribute("src",data.currentUser.image.png);
+      newBlock2.appendChild(currentUserPicture);
+  
+      sendButton=document.createElement("button");
+      sendButton.setAttribute("class","sendButton");
+      sendButton.innerText="SEND";
+      newBlock2.appendChild(sendButton);
+  
+      sendButtonD=document.createElement("button");
+      sendButtonD.setAttribute("class","sendButtonD");
+      sendButtonD.innerText="SEND";
+      newCommentContainer.appendChild(sendButtonD);
 
-    newBlock1=document.createElement("div");
-    newBlock1.setAttribute("class","newBlock1");
-    newBlock1.innerText="Add a comment..."
-    newCommentContainer.appendChild(newBlock1);
-
-    newBlock2=document.createElement("div");
-    newBlock2.setAttribute("class","newBlock2");
-    newCommentContainer.appendChild(newBlock2);
-
-    currentUserPicture=document.createElement("img");
-    currentUserPicture.setAttribute("class","userPicture");
-    currentUserPicture.setAttribute("alt","userPicture");
-    currentUserPicture.setAttribute("src",data.currentUser.image.png);
-    newBlock2.appendChild(currentUserPicture);
-
-    sendButton=document.createElement("button");
-    sendButton.setAttribute("class","sendButton");
-    sendButton.innerText="SEND";
-    newBlock2.appendChild(sendButton);
-
+    }
 
   })
 
@@ -233,3 +320,5 @@ fetch("./data.json")
     </div>        
   </div>
 </section>*/
+
+

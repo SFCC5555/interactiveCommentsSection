@@ -1,0 +1,81 @@
+
+main {
+    width: 550px;
+    margin: 50px 0px;
+}
+
+.commentBlock4 {
+    display: none;
+}
+
+.commentBlock4D {
+    display: flex;
+}
+
+.replayContainerD {
+    display: flex;
+}
+
+.replayContainerD:hover, .editContainer:hover, .deleteContainer:hover, .sendButtonD:hover {
+    cursor: pointer;
+    opacity: 50%;
+
+}
+
+.commentBlock1 {
+    position: relative;
+
+}
+
+.replayContainer {
+    display: none;
+}
+
+.newCommentContainer {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.newReplieContainer {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sendButton {
+    display: none;
+}
+
+.sendButtonD {
+    display: block;
+    align-self: flex-start;
+}
+
+.newBlock2 {
+    width: fit-content;
+    order:-1
+}
+
+.commentContainer {
+    flex-direction: row;
+}
+
+
+.replieContainer {
+    flex-direction: row;
+}
+
+.commentBlock3 {
+    order:-1;
+    width: fit-content;
+    margin-right: 15px;
+}
+
+.scoreContainer {
+    width: 30px;
+    height: 100px;
+    flex-direction: column;
+}
+
+.commentBlock5 {
+    width: 100%;
+}

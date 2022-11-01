@@ -39,6 +39,10 @@ main {
     align-items: center;
 }
 
+.inactive {
+    display: none;
+}
+
 .commentContainer {
     width: 100%;
     display: flex;
@@ -48,6 +52,29 @@ main {
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 15px;
+}
+
+.newCommentContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.newReplieContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-left: 20px;
 }
 
 .replieBox {
@@ -132,7 +159,7 @@ main {
     background-color: var(--lightGray);
     width: 100px;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .score, .replay {
@@ -149,8 +176,8 @@ main {
 
 .plusScore {
     display: inline-block;
-    width: 11px;
-    height: 11px;
+    width: 12px;
+    height: 12px;
     background-image: url(./images/icon-plus.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -158,12 +185,24 @@ main {
 
 .minusScore {
     display: inline-block;
-    width: 11px;
-    height: 3px;
+    width: 12px;
+    height: 12px;
     background-image: url(./images/icon-minus.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.plusScore:hover {
+    background-image: url(./images/icon-plus\ copy.svg);
+    cursor:pointer;
+}
+
+.minusScore:hover {
+    background-image: url(./images/icon-minus\ copy.svg);
+    cursor:pointer;
+}
+
+
 
 .replayContainer {
     width: 100px;
@@ -171,6 +210,17 @@ main {
     align-items: center;
     padding: 10px;
     justify-content: space-between;
+
+}
+
+.replayContainerD {
+    width: 100px;
+    display: none;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    position: absolute;
+    right: 0px;
 
 }
 
@@ -222,6 +272,12 @@ main {
     display: flex;
 }
 
+.commentBlock4D {
+    display: none;
+    position: absolute;
+    right: 0px;
+}
+
 .newBlock1 {
     width: 100%;
     height: 100px;
@@ -229,9 +285,11 @@ main {
     border: 1px solid var(--lightGray);
     color: var(--grayishBlue);
     font-size: 1.6rem;
-    padding: 10px 15px;
+    padding: 0px 15px;
     margin-bottom: 15px;
+
 }
+
 
 .newBlock2 {
     width: 100%;
@@ -250,7 +308,20 @@ main {
     font-size: bold;
     font-size: 1.6rem;
     border-radius: 10px;
+}
 
+.sendButtonD {
+    display: none;
+    width: 115px;
+    height: 40px;
+    background-color: var(--moderateBlue);
+    color: var(--white);
+    border:none;
+    font-family: var(--fontOne);
+    font-size: bold;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    margin-left: 15px;
 }
 
 .attribution { 

@@ -1,8 +1,14 @@
+import imagejuliusomo from "../src/assets/images/avatars/image-juliusomo.png";
+import imageamyrobson from "../src/assets/images/avatars/image-amyrobson.png";
+import imagemaxblagun from "../src/assets/images/avatars/image-maxblagun.png";
+import imageramsesiron from "../src/assets/images/avatars/image-ramsesmiron.png";
+
+
+export const data = 
 {
   "currentUser": {
     "image": { 
-      "png": "./images/avatars/image-juliusomo.png",
-      "webp": "./images/avatars/image-juliusomo.webp"
+      "png": imagejuliusomo
     },
     "username": "juliusomo"
   },
@@ -14,8 +20,7 @@
       "score": 12,
       "user": {
         "image": { 
-          "png": "./images/avatars/image-amyrobson.png",
-          "webp": "./images/avatars/image-amyrobson.webp"
+          "png": imageamyrobson
         },
         "username": "amyrobson"
       },
@@ -28,8 +33,7 @@
       "score": 5,
       "user": {
         "image": { 
-          "png": "./images/avatars/image-maxblagun.png",
-          "webp": "./images/avatars/image-maxblagun.webp"
+          "png": imagemaxblagun
         },
         "username": "maxblagun"
       },
@@ -42,8 +46,7 @@
           "replyingTo": "maxblagun",
           "user": {
             "image": { 
-              "png": "./images/avatars/image-ramsesmiron.png",
-              "webp": "./images/avatars/image-ramsesmiron.webp"
+              "png": imageramsesiron
             },
             "username": "ramsesmiron"
           }
@@ -56,8 +59,7 @@
           "replyingTo": "ramsesmiron",
           "user": {
             "image": { 
-              "png": "./images/avatars/image-juliusomo.png",
-              "webp": "./images/avatars/image-juliusomo.webp"
+              "png": imagejuliusomo
             },
             "username": "juliusomo"
           }

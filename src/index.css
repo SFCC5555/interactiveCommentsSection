@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+    --mainFont: 'Rubik', sans-serif;
+
+    --moderateBlue: hsl(238, 40%, 52%);
+    --softRed: hsl(358, 79%, 66%);
+    --lightGrayishBlue: hsl(239, 57%, 85%);
+    --paleRed: hsl(357, 100%, 86%);
+    
+    
+    --darkBlue: hsl(212, 24%, 26%);
+    --grayishBlue: hsl(211, 10%, 45%);
+    --lightGray: hsl(220, 7%, 84%);
+    --veryLightGray: hsl(227, 100%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+body {
+    font-family: var(--mainFont);
+}
+
+span {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.minusIcon {
+    background-image: url('./assets/images/icon-minus.svg');
+}
+
+.minusIcon:hover {
+    background-image: url('./assets/images/icon-minus-hover.svg');
+}
+
+.plusIcon {
+    background-image: url('./assets/images/icon-plus.svg');
+}
+
+.plusIcon:hover {
+    background-image: url('./assets/images/icon-plus-hover.svg');
+}
+
+textarea:hover, textarea:focus {
+    border-color:var(--moderateBlue)
+}

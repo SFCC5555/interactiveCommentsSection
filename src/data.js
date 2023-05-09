@@ -1,7 +1,7 @@
 import imagejuliusomo from "../src/assets/images/avatars/image-juliusomo.png";
 import imageamyrobson from "../src/assets/images/avatars/image-amyrobson.png";
 import imagemaxblagun from "../src/assets/images/avatars/image-maxblagun.png";
-import imageramsesiron from "../src/assets/images/avatars/image-ramsesmiron.png";
+import imageramsesmiron from "../src/assets/images/avatars/image-ramsesmiron.png";
 
 
 export const data = 
@@ -12,6 +12,12 @@ export const data =
     },
     "username": "juliusomo"
   },
+  "userList": [
+    {"username":"amyrobson","image":imageamyrobson},
+    {"username":"juliusomo","image":imagejuliusomo},
+    {"username":"maxblagun","image":imagemaxblagun},
+    {"username":"ramsesmiron","image":imageramsesmiron}
+],
   "comments": [
     {
       "id": 1,
@@ -46,7 +52,7 @@ export const data =
           "replyingTo": "maxblagun",
           "user": {
             "image": { 
-              "png": imageramsesiron
+              "png": imageramsesmiron
             },
             "username": "ramsesmiron"
           }

@@ -49,7 +49,7 @@ const UsersMenu = ({closeUsersMenu}) => {
         <img className='w-6 h-6' src={u.image} alt={u.username} name={u.username}/>
         <div name={u.username}>{u.username}</div>
       </div>
-      <span  id={u.username} onClick={openDeleteUserModal} className='w-3 h-3 deleteIcon'/>
+      <span  id={u.username} onClick={openDeleteUserModal} className='w-3 h-3 deleteIcon opacity-50 sm:opacity-0'/>
       </div>)}
       <div onClick={openAddUserModal} className='font-normal cursor-pointer opacity-75 hover:opacity-100 self-end' style={{color:'var(--lightGrayishBlue)'}}>New User</div></section>
   )

@@ -52,7 +52,6 @@ span {
 .deleteIcon {
     background-image: url('./assets/images/icon-delete-copy.svg');
     background-size: contain;
-    opacity: 0%;
 }
 
 .deleteIcon:hover {

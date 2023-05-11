@@ -31,7 +31,7 @@ const DeleteUserModal = () => {
             <h2 className='font-semibold' style={{color:'var(--darkBlue)'}}>Delete user</h2>
             <p className='text-xs font-normal text-justify' style={{color:'var(--grayishBlue)'}} >Are you sure you want to delete this user? This will remove the user and can't be undone.</p>
 
-            <section className='flex justify-between text-sm md:text-base gap-2'>
+            <section className='flex justify-between text-xs sm:text-sm md:text-base gap-2'>
                 <Button handleClick={closeDeleteUserModal} color='var(--grayishBlue)' text='NO, CANCEL' />
                 <Button handleClick={deleteUser} color='var(--softRed)' text='YES, DELETE' />
             </section>

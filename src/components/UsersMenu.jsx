@@ -46,7 +46,9 @@ const UsersMenu = ({closeUsersMenu}) => {
   return (
     <section className='fixed top-14 right-5 px-3 py-3 flex flex-col gap-3 w-38 z-10 rounded-b-md font-medium' style={{backgroundColor:'var(--white)',color:'var(--darkBlue)'}}>{userList.filter(u=>u.username!==currentUser.username).map(u=><div key={u.username} onClick={changeUser} className='cursor-pointer hover:opacity-75 flex items-center justify-between gap-3 usersMenu'>
       <div className='flex items-center gap-3'>
-        <img className='w-6 h-6' src={u.image} alt={u.username} name={u.username}/>
+        <div className='w-6 h-6 overflow-hidden rounded-full'>
+          <img className='w-6' src={u.image} alt={u.username} name={u.username}/>
+        </div>
         <div name={u.username}>{u.username}</div>
       </div>
       <span  id={u.username} onClick={openDeleteUserModal} className='w-3 h-3 deleteIcon opacity-50 sm:opacity-0'/>

@@ -75,10 +75,6 @@ textarea:hover, textarea:focus,input:hover,input:focus {
     border-color:var(--softRed)
 }
 
-img {
-    border-radius: 50%;
-}
-
 
 /* Para navegadores WebKit */
 input[type="file"]::-webkit-file-upload-button {

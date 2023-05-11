@@ -29,7 +29,9 @@ const NavBar = () => {
         <div>The Social Network</div>
         <div onClick={renderUsersMenu} className='flex items-center gap-2 cursor-pointer hover:opacity-80'>
             <div id='userName'>{currentUser.username}</div>
-            <img id='userImage'className='w-10 h-10' src={currentUser.image.png} alt={currentUser.username}/>
+            <div className='w-10 h-10 overflow-hidden rounded-full'>
+              <img id='userImage' className='w-10' src={currentUser.image.png} alt={currentUser.username}/>
+            </div>
         </div>
      </nav>
      {usersMenu&&<UsersMenu closeUsersMenu={closeUsersMenu}/>}

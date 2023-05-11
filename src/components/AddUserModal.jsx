@@ -134,7 +134,7 @@ const AddUserModal = () => {
             </div>
 
             <p className='text-xs font-normal text-justify' style={{color:invalidImageFormatError?'var(--softRed)':'var(--lightGrayishBlue)'}} >Please select or drag an image in JPG, PNG, SVG or WEBP format for your profile picture. (optional)</p>
-            <div className={`inputImageContainer w-48 h-12 rounded-md border-dashed border-2 relative ${invalidImageFormatError&&'inputError'}`} style={{color:invalidImageFormatError?'var(--softRed)':'var(--lightGrayishBlue)'}}>
+            <div className={`inputImageContainer overflow-hidden w-48 h-12 rounded-md border-dashed border-2 relative ${invalidImageFormatError&&'inputError'}`} style={{color:invalidImageFormatError?'var(--softRed)':'var(--lightGrayishBlue)'}}>
               <div className='absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-sm' >{imageName}</div>
               <input className='text-xs cursor-pointer opacity-0 w-full h-full z-10' style={{color:'var(--grayishBlue)'}} onChange={handleImageChange} type='file' />
             </div>

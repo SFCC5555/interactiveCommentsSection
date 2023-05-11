@@ -49,6 +49,50 @@ span {
     background-image: url('./assets/images/icon-plus-hover.svg');
 }
 
-textarea:hover, textarea:focus {
+.deleteIcon {
+    background-image: url('./assets/images/icon-delete-copy.svg');
+    background-size: contain;
+    opacity: 0%;
+}
+
+.deleteIcon:hover {
+    background-image: url('./assets/images/icon-delete.svg');
+    opacity: 75%;
+}
+
+.usersMenu:hover .deleteIcon {
+    opacity: 50%;
+}
+
+textarea:hover, textarea:focus,input:hover,input:focus {
     border-color:var(--moderateBlue)
+}
+
+.inputImageContainer:hover {
+    border-color: var(--moderateBlue);
+}
+
+.inputError, .inputError:hover, .inputError:focus {
+    border-color:var(--softRed)
+}
+
+img {
+    border-radius: 50%;
+}
+
+
+
+/* Para navegadores WebKit */
+input[type="file"]::-webkit-file-upload-button {
+    cursor: pointer;
+}
+  
+/* Para navegadores Mozilla Firefox */
+input[type="file"]::-moz-file-upload-button {
+    cursor: pointer;
+  }
+  
+/* Para navegadores más modernos */
+input[type="file"]::file-selector-button {
+    cursor: pointer;
 }

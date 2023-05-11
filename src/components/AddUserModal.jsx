@@ -48,7 +48,7 @@ const AddUserModal = () => {
 
     } else {
       setNewUserImage('');
-      setImageName('Add Image');
+      setImageName(e.target.files[0].type);
       setInvalidImageFormatError(true);
     }
 

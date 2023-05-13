@@ -11,12 +11,13 @@ import { Input } from './Input';
 
 const Comment = ({ c }) => {
 
-  const {currentUser,userList,comments,setComments} = useContext(CommentsContext);
+  const {currentUser,userList,comments,setComments,resetVotes,setResetVotes} = useContext(CommentsContext);
   const [reply,setReply] = useState(false);
   const [edit,setEdit] = useState(false);
   const [editValue,setEditValue] = useState('');
   const [editedList,setEditedList] = useState(localStorage.getItem('editedListStorage')?JSON.parse(localStorage.getItem('editedListStorage')):[]);
-
+  
+  
   function handleEditChange(e) {
 
     if (c.replyingTo) {
@@ -87,7 +88,7 @@ const Comment = ({ c }) => {
         </section>
 
         <section className='flex items-center justify-between'>
-              <Votes c={c} currentUser={currentUser.username}/>
+              <Votes c={c} currentUser={currentUser.username} setEditedList={setEditedList}/>
               {c.user.username===currentUser.username?
               <div className='flex items-center gap-5 sm:absolute top-4 right-4'>
                 <Delete id={c.id}/>

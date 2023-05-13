@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useContext } from 'react';
 import { CommentsContext } from '../context/Comments/CommentsContext';
 
-const Votes = ({c,currentUser}) => {
+const Votes = ({c,currentUser,setEditedList}) => {
 
   const {comments,setComments,resetVotes,setResetVotes} = useContext(CommentsContext);
   const [upVote,setUpVote] = useState(localStorage.getItem('upVoteStorage'+c.id)?JSON.parse(localStorage.getItem('upVoteStorage'+c.id)):[]);
@@ -13,6 +13,8 @@ const Votes = ({c,currentUser}) => {
     setDownVote([]);
     localStorage.setItem('upVoteStorage'+c.id,JSON.stringify([]));
     localStorage.setItem('downVoteStorage'+c.id,JSON.stringify([]));
+    setEditedList([]);
+    localStorage.setItem('editedListStorage',JSON.stringify([]));
     setResetVotes(false);
   }
   

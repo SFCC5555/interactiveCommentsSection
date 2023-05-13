@@ -7,9 +7,21 @@ const ModalsContextProvider = ({children}) => {
     const [activeModal,setActiveModal] = useState(false);
     const [addUserModal,setAddUserModal] = useState(false);
     const [deleteUserModal,setDeleteUserModal] = useState(false);
+    const [deleteCommentModal,setDeleteCommentModal] = useState(false);
+    const [resetModal,setResetModal] = useState(false);
 
 
-    return <ModalsContext.Provider value={{activeModal,setActiveModal,addUserModal,setAddUserModal,deleteUserModal,setDeleteUserModal}}>
+    return <ModalsContext.Provider value={{activeModal,
+                                            setActiveModal,
+                                            addUserModal,
+                                            setAddUserModal,
+                                            deleteUserModal,
+                                            setDeleteUserModal,
+                                            deleteCommentModal,
+                                            setDeleteCommentModal,
+                                            resetModal,
+                                            setResetModal
+                                            }}>
         {children}
     </ModalsContext.Provider>
 }

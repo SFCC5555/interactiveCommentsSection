@@ -41,12 +41,40 @@ span {
     background-image: url('./assets/images/icon-minus-hover.svg');
 }
 
+.activeMinusIcon {
+    background-image: url('./assets/images/icon-minus-hover.svg');
+}
+
+.activeMinusIcon:hover {
+    background-image: url('./assets/images/icon-minus.svg');
+}
+
+.inactiveMinusIcon {
+    background-image: url('./assets/images/icon-minus.svg');
+    opacity: 50%;
+    cursor: default;
+}
+
 .plusIcon {
     background-image: url('./assets/images/icon-plus.svg');
 }
 
 .plusIcon:hover {
     background-image: url('./assets/images/icon-plus-hover.svg');
+}
+
+.activePlusIcon {
+    background-image: url('./assets/images/icon-plus-hover.svg');
+}
+
+.activePlusIcon:hover {
+    background-image: url('./assets/images/icon-plus.svg');
+}
+
+.inactivePlusIcon {
+    background-image: url('./assets/images/icon-plus.svg');
+    opacity: 50%;
+    cursor: default;
 }
 
 .deleteIcon {
@@ -89,4 +117,8 @@ input[type="file"]::-moz-file-upload-button {
 /* Para navegadores más modernos */
 input[type="file"]::file-selector-button {
     cursor: pointer;
+}
+
+.verga {
+    word-wrap: break-word;
 }

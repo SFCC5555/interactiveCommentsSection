@@ -6,7 +6,7 @@ import { CommentsContext } from '../context/Comments/CommentsContext'
 
 const DeleteUserModal = () => {
 
-  const {userList,setUserList,userToDelete} = useContext(CommentsContext);
+  const {setUserList,userToDelete} = useContext(CommentsContext);
   const {deleteUserModal,setDeleteUserModal,setActiveModal} = useContext(ModalsContext);
 
   function deleteUser() {

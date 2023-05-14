@@ -37,16 +37,8 @@ span {
     background-image: url('./assets/images/icon-minus.svg');
 }
 
-.minusIcon:hover {
-    background-image: url('./assets/images/icon-minus-hover.svg');
-}
-
 .activeMinusIcon {
     background-image: url('./assets/images/icon-minus-hover.svg');
-}
-
-.activeMinusIcon:hover {
-    background-image: url('./assets/images/icon-minus.svg');
 }
 
 .inactiveMinusIcon {
@@ -59,16 +51,8 @@ span {
     background-image: url('./assets/images/icon-plus.svg');
 }
 
-.plusIcon:hover {
-    background-image: url('./assets/images/icon-plus-hover.svg');
-}
-
 .activePlusIcon {
     background-image: url('./assets/images/icon-plus-hover.svg');
-}
-
-.activePlusIcon:hover {
-    background-image: url('./assets/images/icon-plus.svg');
 }
 
 .inactivePlusIcon {
@@ -119,6 +103,22 @@ input[type="file"]::file-selector-button {
     cursor: pointer;
 }
 
-.verga {
-    word-wrap: break-word;
+@media screen and (min-width: 600px) {
+
+    .minusIcon:hover {
+        background-image: url('./assets/images/icon-minus-hover.svg');
+    }
+
+    .activeMinusIcon:hover {
+        background-image: url('./assets/images/icon-minus.svg');
+    }
+
+    .plusIcon:hover {
+        background-image: url('./assets/images/icon-plus-hover.svg');
+    }
+
+    .activePlusIcon:hover {
+        background-image: url('./assets/images/icon-plus.svg');
+    }
+
 }

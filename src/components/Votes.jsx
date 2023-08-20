@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { useContext } from 'react';
 import { CommentsContext } from '../context/Comments/CommentsContext';
 

@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/SFCC5555/interactiveCommentsSection)
-- Live Site URL: [Add live site URL here](https://the-social-network-comment-section.netlify.app/)
+- Solution URL: [GitHub](https://github.com/SFCC5555/interactiveCommentsSection)
+- Live Site URL: [The Social Network Comment Section](https://the-social-network-comment-section.netlify.app/)
 
 ## My process
 
@@ -49,6 +49,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Fernando Carrasco](https://sfcc5555.netlify.app/)
+- Website - [Fernando Carrasco Portfolio](https://sfcc5555.netlify.app/)
 - Frontend Mentor - [@SFCC5555](https://www.frontendmentor.io/profile/SFCC5555)
 
